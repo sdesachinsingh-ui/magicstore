@@ -49,7 +49,7 @@ export default function HomePage() {
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <a href="#products">Browse All Products</a>
+                <a href="#products">Browse Choosen Products</a>
               </Button>
             </div>
           </div>
