@@ -27,7 +27,7 @@ export function AnimatedHeroText() {
   return (
     <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
       Build Your Perfect{" "}
-      <span className="relative inline-block h-[1.2em] overflow-hidden align-bottom">
+      <span className="relative inline-flex h-[1.2em] min-w-[280px] overflow-hidden align-bottom md:min-w-[320px]">
         {rotatingWords.map((word, index) => (
           <span
             key={word}
