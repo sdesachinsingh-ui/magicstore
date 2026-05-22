@@ -6,10 +6,9 @@ export interface Product {
   description: string;
   category: "smart-monitors" | "lighting" | "hydration" | "planters" | "soil" | "accessories";
   imageUrl: string;
-  amazonAffiliateLink: string;
+  affiliateUrl: string;
   priceEstimate: "$" | "$$" | "$$$" | "$$$$";
-  pros: string[];
-  cons: string[];
+  features: string[];
 }
 
 export interface Hotspot {
@@ -39,10 +38,9 @@ export const products: Product[] = [
     description: "WiFi-enabled soil moisture, temperature, and nutrient sensor with smartphone app integration. Provides real-time alerts when your plants need attention.",
     category: "smart-monitors",
     imageUrl: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=400&fit=crop",
-    amazonAffiliateLink: "https://amazon.com/dp/example1?tag=youraffid-20",
+    affiliateUrl: "https://amzn.to/3xyzABC",
     priceEstimate: "$$",
-    pros: ["Real-time smartphone notifications", "Tracks multiple plant metrics", "Long battery life (6+ months)", "Works with smart home systems"],
-    cons: ["Requires WiFi connection", "App has learning curve"]
+    features: ["Real-time smartphone notifications", "Tracks multiple plant metrics", "Long battery life (6+ months)", "Works with smart home systems"]
   },
   {
     id: "grow-light-panel-1",
@@ -50,10 +48,9 @@ export const products: Product[] = [
     description: "Full-spectrum LED grow light with adjustable intensity and timer. Perfect for indoor plants that need supplemental lighting year-round.",
     category: "lighting",
     imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop",
-    amazonAffiliateLink: "https://amazon.com/dp/example2?tag=youraffid-20",
+    affiliateUrl: "https://amzn.to/3xyzDEF",
     priceEstimate: "$$$",
-    pros: ["Full spectrum mimics natural sunlight", "Built-in timer with multiple modes", "Energy efficient", "Daisy-chain multiple units"],
-    cons: ["Can get warm during extended use", "Mounting hardware sold separately"]
+    features: ["Full spectrum mimics natural sunlight", "Built-in timer with multiple modes", "Energy efficient", "Daisy-chain multiple units"]
   },
   {
     id: "auto-watering-globe-1",
@@ -61,10 +58,9 @@ export const products: Product[] = [
     description: "Elegant hand-blown glass watering globes that slowly release water over 1-2 weeks. Set of 4 in assorted earth tones.",
     category: "hydration",
     imageUrl: "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400&h=400&fit=crop",
-    amazonAffiliateLink: "https://amazon.com/dp/example3?tag=youraffid-20",
+    affiliateUrl: "https://amzn.to/3xyzGHI",
     priceEstimate: "$",
-    pros: ["Beautiful decorative element", "No electricity required", "Set of 4 included", "Works with any pot size"],
-    cons: ["Needs refilling every 1-2 weeks", "Glass can break if dropped"]
+    features: ["Beautiful decorative element", "No electricity required", "Set of 4 included", "Works with any pot size"]
   },
   {
     id: "ceramic-planter-set-1",
@@ -72,10 +68,9 @@ export const products: Product[] = [
     description: "Modern matte ceramic planters with bamboo drainage trays. Set of 3 in graduated sizes perfect for creating visual hierarchy.",
     category: "planters",
     imageUrl: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&h=400&fit=crop",
-    amazonAffiliateLink: "https://amazon.com/dp/example4?tag=youraffid-20",
+    affiliateUrl: "https://amzn.to/3xyzJKL",
     priceEstimate: "$$",
-    pros: ["Premium matte finish", "Drainage holes with trays", "Stackable for storage", "Multiple size options"],
-    cons: ["Heavy when filled", "White shows water stains"]
+    features: ["Premium matte finish", "Drainage holes with trays", "Stackable for storage", "Multiple size options"]
   },
   {
     id: "premium-potting-mix-1",
@@ -83,10 +78,9 @@ export const products: Product[] = [
     description: "Professional-grade potting soil blend with perlite, coco coir, and slow-release nutrients. Optimized for indoor container plants.",
     category: "soil",
     imageUrl: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=400&fit=crop",
-    amazonAffiliateLink: "https://amazon.com/dp/example5?tag=youraffid-20",
+    affiliateUrl: "https://amzn.to/3xyzMNO",
     priceEstimate: "$",
-    pros: ["Excellent drainage", "Pre-mixed with nutrients", "Resealable bag", "No fungus gnats"],
-    cons: ["8qt bag may not be enough for large projects"]
+    features: ["Excellent drainage", "Pre-mixed with nutrients", "Resealable bag", "No fungus gnats"]
   },
   {
     id: "misting-system-1",
@@ -94,10 +88,9 @@ export const products: Product[] = [
     description: "USB-powered ultrasonic misting system with humidity sensor. Automatically maintains optimal humidity levels for tropical plants.",
     category: "hydration",
     imageUrl: "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=400&h=400&fit=crop",
-    amazonAffiliateLink: "https://amazon.com/dp/example6?tag=youraffid-20",
+    affiliateUrl: "https://amzn.to/3xyzPQR",
     priceEstimate: "$$",
-    pros: ["Automatic humidity control", "Whisper quiet operation", "USB powered", "Adjustable mist output"],
-    cons: ["Small water reservoir", "Requires distilled water for best results"]
+    features: ["Automatic humidity control", "Whisper quiet operation", "USB powered", "Adjustable mist output"]
   },
   {
     id: "plant-stand-1",
@@ -105,10 +98,9 @@ export const products: Product[] = [
     description: "Minimalist black metal plant stand with three graduated tiers. Perfect for creating vertical displays in small spaces.",
     category: "accessories",
     imageUrl: "https://images.unsplash.com/photo-1545241047-6083a3684587?w=400&h=400&fit=crop",
-    amazonAffiliateLink: "https://amazon.com/dp/example7?tag=youraffid-20",
+    affiliateUrl: "https://amzn.to/3xyzSTU",
     priceEstimate: "$$",
-    pros: ["Space-saving vertical design", "Sturdy powder-coated steel", "Easy assembly", "Modern aesthetic"],
-    cons: ["Top tier has smaller capacity", "Black finish shows dust"]
+    features: ["Space-saving vertical design", "Sturdy powder-coated steel", "Easy assembly", "Modern aesthetic"]
   },
   {
     id: "zen-sand-kit-1",
@@ -116,10 +108,9 @@ export const products: Product[] = [
     description: "Premium white sand with polished river stones and mini wooden rake. Creates calming zen garden elements for any desktop setup.",
     category: "accessories",
     imageUrl: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=400&h=400&fit=crop",
-    amazonAffiliateLink: "https://amazon.com/dp/example8?tag=youraffid-20",
+    affiliateUrl: "https://amzn.to/3xyzVWX",
     priceEstimate: "$",
-    pros: ["Therapeutic and meditative", "Premium quality materials", "Includes rake tool", "Easy to reshape patterns"],
-    cons: ["Sand can spill if disturbed", "Requires shallow container"]
+    features: ["Therapeutic and meditative", "Premium quality materials", "Includes rake tool", "Easy to reshape patterns"]
   },
   {
     id: "smart-plug-timer-1",
@@ -127,10 +118,9 @@ export const products: Product[] = [
     description: "WiFi smart plug with customizable schedules for grow lights. Works with Alexa, Google Home, and smartphone apps.",
     category: "smart-monitors",
     imageUrl: "https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=400&h=400&fit=crop",
-    amazonAffiliateLink: "https://amazon.com/dp/example9?tag=youraffid-20",
+    affiliateUrl: "https://amzn.to/3xyzYZA",
     priceEstimate: "$",
-    pros: ["Voice control compatible", "Create complex schedules", "Monitor energy usage", "Compact design"],
-    cons: ["Requires 2.4GHz WiFi", "Setup can be finicky"]
+    features: ["Voice control compatible", "Create complex schedules", "Monitor energy usage", "Compact design"]
   },
   {
     id: "succulent-trio-1",
@@ -138,10 +128,9 @@ export const products: Product[] = [
     description: "Three hand-selected healthy succulents in 2-inch pots. Variety pack includes echeveria, haworthia, and sedum species.",
     category: "planters",
     imageUrl: "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=400&h=400&fit=crop",
-    amazonAffiliateLink: "https://amazon.com/dp/example10?tag=youraffid-20",
+    affiliateUrl: "https://amzn.to/3xyzBCD",
     priceEstimate: "$",
-    pros: ["Live healthy plants", "Low maintenance", "Great starter pack", "Shipped with care instructions"],
-    cons: ["Seasonal availability", "May need repotting"]
+    features: ["Live healthy plants", "Low maintenance", "Great starter pack", "Shipped with care instructions"]
   },
   {
     id: "balcony-rail-planter-1",
@@ -149,10 +138,9 @@ export const products: Product[] = [
     description: "Weather-resistant planter that securely mounts to balcony railings. Self-watering reservoir holds 2 weeks of water.",
     category: "planters",
     imageUrl: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=400&fit=crop",
-    amazonAffiliateLink: "https://amazon.com/dp/example11?tag=youraffid-20",
+    affiliateUrl: "https://amzn.to/3xyzEFG",
     priceEstimate: "$$",
-    pros: ["Self-watering system", "UV-resistant material", "Adjustable rail clips", "Drainage overflow protection"],
-    cons: ["Limited color options", "Requires sturdy railing"]
+    features: ["Self-watering system", "UV-resistant material", "Adjustable rail clips", "Drainage overflow protection"]
   },
   {
     id: "drip-irrigation-kit-1",
@@ -160,10 +148,9 @@ export const products: Product[] = [
     description: "Complete drip irrigation system for up to 15 plants. Includes timer, tubing, and adjustable drippers.",
     category: "hydration",
     imageUrl: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=400&fit=crop",
-    amazonAffiliateLink: "https://amazon.com/dp/example12?tag=youraffid-20",
+    affiliateUrl: "https://amzn.to/3xyzHIJ",
     priceEstimate: "$$$",
-    pros: ["Set and forget watering", "Customizable flow rates", "Expandable system", "Battery-powered timer"],
-    cons: ["Initial setup takes time", "Requires nearby water source"]
+    features: ["Set and forget watering", "Customizable flow rates", "Expandable system", "Battery-powered timer"]
   }
 ];
 

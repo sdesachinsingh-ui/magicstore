@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { Leaf, Sparkles } from "lucide-react";
+import { Sparkles, Store } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { EcosystemCard } from "@/components/ecosystem-card";
 import { ProductCard } from "@/components/product-card";
+import { AnimatedHeroText } from "@/components/animated-hero-text";
 import { 
   ecosystems, 
   products, 
@@ -34,18 +35,16 @@ export default function HomePage() {
               <Sparkles className="mr-1.5 h-3 w-3" />
               Curated Ecosystems
             </Badge>
-            <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
-              Build Your Perfect Green Space
-            </h1>
+            <AnimatedHeroText />
             <p className="mt-6 text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
-              Stop buying random plants. Start building intentional ecosystems. We curate 
+              Stop buying random products. Start building intentional ecosystems. We curate 
               compatible products so you can recreate the exact look and functionality 
               you see in our guides.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <Button size="lg" asChild>
                 <a href="#ecosystems">
-                  <Leaf className="mr-2 h-5 w-5" />
+                  <Store className="mr-2 h-5 w-5" />
                   Explore Ecosystems
                 </a>
               </Button>

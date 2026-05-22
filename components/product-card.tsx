@@ -62,9 +62,9 @@ export function ProductCard({ product, showCategory = false }: ProductCardProps)
           size="sm"
         >
           <a
-            href={product.amazonAffiliateLink}
+            href={product.affiliateUrl}
             target="_blank"
-            rel="noopener noreferrer nofollow"
+            rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
           >
             View on Amazon

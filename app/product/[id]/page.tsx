@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Check, ExternalLink, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -27,12 +27,12 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   
   if (!product) {
     return {
-      title: "Product Not Found | MagicStore",
+      title: "Product Not Found | Magicstore",
     };
   }
 
   return {
-    title: `${product.name} | MagicStore`,
+    title: `${product.name} | Magicstore`,
     description: product.description,
     openGraph: {
       title: product.name,
@@ -107,9 +107,9 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
               <div className="mt-8">
                 <Button size="lg" className="w-full sm:w-auto" asChild>
                   <a
-                    href={product.amazonAffiliateLink}
+                    href={product.affiliateUrl}
                     target="_blank"
-                    rel="noopener noreferrer nofollow"
+                    rel="noopener noreferrer"
                   >
                     View on Amazon
                     <ExternalLink className="ml-2 h-5 w-5" />
@@ -122,48 +122,25 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
 
               <Separator className="my-8" />
 
-              {/* Pros & Cons */}
-              <div className="grid gap-6 sm:grid-cols-2">
-                {/* Pros */}
-                <Card className="border-primary/20 bg-primary/5">
-                  <CardHeader className="pb-3">
-                    <CardTitle className="flex items-center gap-2 text-lg">
-                      <Check className="h-5 w-5 text-primary" />
-                      Pros
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2">
-                      {product.pros.map((pro, index) => (
-                        <li key={index} className="flex items-start gap-2 text-sm">
-                          <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                          <span>{pro}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-
-                {/* Cons */}
-                <Card className="border-destructive/20 bg-destructive/5">
-                  <CardHeader className="pb-3">
-                    <CardTitle className="flex items-center gap-2 text-lg">
-                      <X className="h-5 w-5 text-destructive" />
-                      Cons
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2">
-                      {product.cons.map((con, index) => (
-                        <li key={index} className="flex items-start gap-2 text-sm">
-                          <X className="mt-0.5 h-4 w-4 shrink-0 text-destructive" />
-                          <span>{con}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              </div>
+              {/* Features */}
+              <Card className="border-primary/20 bg-primary/5">
+                <CardHeader className="pb-3">
+                  <CardTitle className="flex items-center gap-2 text-lg">
+                    <Check className="h-5 w-5 text-primary" />
+                    Key Features
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {product.features.map((feature, index) => (
+                      <li key={index} className="flex items-start gap-2 text-sm">
+                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>

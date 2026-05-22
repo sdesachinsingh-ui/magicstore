@@ -136,9 +136,9 @@ export function EcosystemBundleList({
                 className="shrink-0"
               >
                 <a
-                  href={product.amazonAffiliateLink}
+                  href={product.affiliateUrl}
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
+                  rel="noopener noreferrer"
                 >
                   <span className="hidden sm:inline">Amazon</span>
                   <ExternalLink className="h-4 w-4 sm:ml-2" />

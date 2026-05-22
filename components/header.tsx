@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Leaf, Menu, X } from "lucide-react";
+import { Store, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -15,9 +15,9 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <Leaf className="h-7 w-7 text-primary" />
+            <Store className="h-7 w-7 text-primary" />
             <span className="text-xl font-bold tracking-tight text-foreground">
-              MagicStore
+              Magicstore
             </span>
           </Link>
 

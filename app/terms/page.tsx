@@ -3,8 +3,8 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const metadata = {
-  title: "Terms of Service | MagicStore",
-  description: "Terms of service for MagicStore",
+  title: "Terms of Service | Magicstore",
+  description: "Terms of service for Magicstore",
 };
 
 export default function TermsPage() {

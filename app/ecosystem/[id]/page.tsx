@@ -25,12 +25,12 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   
   if (!ecosystem) {
     return {
-      title: "Ecosystem Not Found | MagicStore",
+      title: "Ecosystem Not Found | Magicstore",
     };
   }
 
   return {
-    title: `${ecosystem.title} | MagicStore`,
+    title: `${ecosystem.title} | Magicstore`,
     description: ecosystem.description,
     openGraph: {
       title: ecosystem.title,

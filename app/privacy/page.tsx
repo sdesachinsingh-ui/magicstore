@@ -3,8 +3,8 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const metadata = {
-  title: "Privacy Policy | MagicStore",
-  description: "Privacy policy for MagicStore - how we handle your data",
+  title: "Privacy Policy | Magicstore",
+  description: "Privacy policy for Magicstore - how we handle your data",
 };
 
 export default function PrivacyPage() {

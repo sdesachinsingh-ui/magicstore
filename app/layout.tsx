@@ -9,17 +9,17 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MagicStore | Curated Plant Ecosystems for Modern Living",
+  title: "Magicstore | Curated Ecosystems for Modern Living",
   description:
-    "Discover expertly curated plant ecosystems and individual products to create your perfect indoor garden. Complete shopping guides with Amazon affiliate links.",
+    "Discover expertly curated ecosystems and individual products to create your perfect space. Complete shopping guides with Amazon affiliate links.",
   keywords: [
+    "curated products",
+    "product ecosystems",
+    "smart home",
+    "workspace setup",
+    "home office",
+    "desk setup",
     "indoor plants",
-    "plant ecosystems",
-    "smart gardening",
-    "indoor garden",
-    "plant care",
-    "zen garden",
-    "balcony plants",
   ],
   icons: {
     icon: [

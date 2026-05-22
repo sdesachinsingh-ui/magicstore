@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Leaf } from "lucide-react";
+import { Store } from "lucide-react";
 
 export function GlobalFooter() {
   return (
@@ -10,11 +10,11 @@ export function GlobalFooter() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2">
-              <Leaf className="h-6 w-6 text-primary" />
-              <span className="text-lg font-bold text-foreground">MagicStore</span>
+              <Store className="h-6 w-6 text-primary" />
+              <span className="text-lg font-bold text-foreground">Magicstore</span>
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Curated ecosystems for modern plant enthusiasts. We help you build the perfect green space with expertly selected, compatible products.
+              Curated ecosystems for modern enthusiasts. We help you build the perfect space with expertly selected, compatible products.
             </p>
           </div>
 
@@ -69,7 +69,7 @@ export function GlobalFooter() {
         {/* Copyright */}
         <div className="mt-6 text-center">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} MagicStore. All rights reserved.
+            &copy; {new Date().getFullYear()} Magicstore. All rights reserved.
           </p>
         </div>
       </div>
